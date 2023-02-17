@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32602.291
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FeetShop", "DiplomenProektNo7\FeetShop.csproj", "{6A92D987-667D-4FCD-9645-522B8B437A60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiplomenProektNo7", "DiplomenProektNo7\DiplomenProektNo7.csproj", "{6A92D987-667D-4FCD-9645-522B8B437A60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

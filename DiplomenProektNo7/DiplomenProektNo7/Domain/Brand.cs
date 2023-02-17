@@ -12,6 +12,6 @@ namespace DiplomenProektNo7.Domain
         [Required]
         [MaxLength(30)]
         public string BrandName { get; set; }
-        public virtual IEnumerable<Shoe> Products { get; set; } = new List<Shoe>();
+        public virtual IEnumerable<Shoe> Shoes { get; set; } = new List<Shoe>();
     }
 }
