@@ -12,7 +12,36 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\Areas\Identity\Pages\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\Areas\Identity\Pages\_ViewImports.cshtml"
+using DiplomenProektNo7.Areas.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\Areas\Identity\Pages\_ViewImports.cshtml"
+using DiplomenProektNo7.Areas.Identity.Pages;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\Areas\Identity\Pages\_ViewImports.cshtml"
+using DiplomenProektNo7.Domain;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"13b82ef97968a56a4de533f67cf3e21d662f41aa", @"/Areas/Identity/Pages/_ViewStart.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f84847abfef1f83afdf406930d21b968f53e3a0e", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     #nullable restore
     public class Areas_Identity_Pages__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     #nullable disable
