@@ -1,5 +1,8 @@
+using DiplomenProektNo7.Abstraction;
 using DiplomenProektNo7.Data;
 using DiplomenProektNo7.Domain;
+using DiplomenProektNo7.Infrastucture;
+using DiplomenProektNo7.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -36,6 +39,8 @@ namespace DiplomenProektNo7
             // services.AddRazorPages();
             // services.Configure<IdentityOptions>(option =>
 
+            services.AddTransient<ICategoryService, CategoryService>();
+            services.AddTransient<IBrandService, BrandService>();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseLazyLoadingProxies()
                 .UseSqlServer(
@@ -46,6 +51,7 @@ namespace DiplomenProektNo7
                 .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+
             services.AddControllersWithViews();
             services.Configure<IdentityOptions>(option =>
             {
@@ -62,6 +68,7 @@ namespace DiplomenProektNo7
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.PrepareDatabase();
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
