@@ -15,7 +15,7 @@ namespace DiplomenProektNo7.Services
         {
             _context = context;
         }
-        public Category GetCategoryId(int categoryId)
+        public Category GetCategoryById(int categoryId)
         {
             return _context.Categories.Find(categoryId);
         }

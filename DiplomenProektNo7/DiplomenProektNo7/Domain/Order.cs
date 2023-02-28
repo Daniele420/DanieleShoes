@@ -14,8 +14,8 @@ namespace DiplomenProektNo7.Domain
         [Required]
         public DateTime OrderDate { get; set; }
         [Required]
-        public int ProductId { get; set; }
-        public virtual Shoe Product { get; set; }
+        public int ShoeId { get; set; }
+        public virtual Shoe Shoe { get; set; }
         [Required]
         public string UserId { get; set; }
         public virtual ApplicationUser User { get; set; }

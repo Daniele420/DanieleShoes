@@ -11,7 +11,7 @@ namespace DiplomenProektNo7.Domain
         public int Id { get; set; }
         [Required]
         [MaxLength(30)]
-        public string ProductName { get; set; }
+        public string ShoeName { get; set; }
         [Required]
         public int BrandId { get; set; }
         public virtual Brand Brand { get; set; }

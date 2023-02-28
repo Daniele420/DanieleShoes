@@ -39,8 +39,11 @@ namespace DiplomenProektNo7
             // services.AddRazorPages();
             // services.Configure<IdentityOptions>(option =>
 
+            services.AddTransient<IShoeService, ShoeService>();
+
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IBrandService, BrandService>();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseLazyLoadingProxies()
                 .UseSqlServer(
@@ -52,6 +55,7 @@ namespace DiplomenProektNo7
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddRazorPages();
             services.AddControllersWithViews();
             services.Configure<IdentityOptions>(option =>
             {

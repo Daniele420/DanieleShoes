@@ -843,3 +843,7 @@ C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj
 C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\bin\Debug\net5.0\DocumentFormat.OpenXml.dll
+C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\bin\Debug\net5.0\System.IO.Packaging.dll
+C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Views\Shoe\Create.cshtml.g.cs
+C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Views\Shoe\Index.cshtml.g.cs
