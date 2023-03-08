@@ -1,30 +1,23 @@
 ﻿using Castle.Components.DictionaryAdapter;
-using DiplomenProektNo7.Abstraction;
-using DiplomenProektNo7.Domain;
 using DiplomenProektNo7.Models.Brand;
 using DiplomenProektNo7.Models.Category;
-using DiplomenProektNo7.Services;
-using DocumentFormat.OpenXml.Drawing;
-using DocumentFormat.OpenXml.Office2010.Excel;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore.Migrations.Operations;
-using System;
+using DocumentFormat.OpenXml.Office2010.ExcelAc;
+using DocumentFormat.OpenXml.Office2013.Drawing.Chart;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 using KeyAttribute = System.ComponentModel.DataAnnotations.KeyAttribute;
 
 namespace DiplomenProektNo7.Models.Shoe
 {
-    public class ShoeCreateVM
+    public class ShoeEditVM
     {
-        public ShoeCreateVM()
+        public ShoeEditVM() 
         {
 
             Brands = new List<BrandPairVM>();
             Categories = new List<CategoryPairVM>();
         }
-         [Key]
+        [Key]
         public int Id { get; set; }
 
         [Required]
@@ -40,12 +33,12 @@ namespace DiplomenProektNo7.Models.Shoe
         [Required]
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
-        public virtual List<CategoryPairVM> Categories { get; set; }
-        
+        public virtual List <CategoryPairVM> Categories { get; set; }
+
         [Display(Name = "Picture")]
         public string Picture { get; set; }
         [Required]
-        [Range(0, 2000)]
+        [Range(0, 5000)]
         [Display(Name = "Quantity")]
         public int Quantity { get; set; }
         [Required]

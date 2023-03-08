@@ -27,5 +27,9 @@ namespace DiplomenProektNo7.Domain
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
         public virtual IEnumerable<Order> Orders { get; set; } = new List<Order>();
+        [Required]
+        public string Description { get; set; }
+        public string Colour { get; set; }
+        public string Material { get; set; }
     }
 }

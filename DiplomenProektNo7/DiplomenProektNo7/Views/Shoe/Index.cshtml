@@ -5,10 +5,12 @@
 }
 
 <h1>Index</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
+@if ((this.User.Identity.IsAuthenticated) && (this.User.IsInRole("Administrator")))
+{
+    <p>
+        <a asp-action="Create">Create New</a>
+    </p>
+}
 <form asp-controller="Shoe" asp-action="Index" method="get">
     <p>
         Brand: <input type="text" name="SearchStringBrandName" />
@@ -51,7 +53,8 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model) 
+    {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.ShoeName)

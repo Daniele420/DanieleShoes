@@ -21,5 +21,8 @@ namespace DiplomenProektNo7.Data
         public DbSet<Order> Orders { get; set; }
         public DbSet<DiplomenProektNo7.Models.Shoe.ShoeCreateVM> ShoeCreateVM { get; set; }
         public DbSet<DiplomenProektNo7.Models.Shoe.ShoeIndexVM> ShoeIndexVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Shoe.ShoeEditVM> ShoeEditVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Shoe.ShoeDetailsVM> ShoeDetailsVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Shoe.ShoeDeleteVM> ShoeDeleteVM { get; set; }
     }
 }

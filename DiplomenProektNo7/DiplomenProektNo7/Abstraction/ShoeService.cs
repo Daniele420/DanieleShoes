@@ -55,7 +55,7 @@ namespace DiplomenProektNo7.Abstraction
         public List<Shoe> GetShoes(string searchStringCategoryName, string searchStringBrandName)
         {
             List<Shoe> shoes = _context.Shoes.ToList();
-            if (!String.IsNullOrEmpty(searchStringCategoryName) && !String.IsNullOrEmpty(searchStringBrandName))
+            if (!String.IsNullOrEmpty(searchStringCategoryName) && String.IsNullOrEmpty(searchStringBrandName))
             {
                 shoes = shoes.Where(x => x.Category.CategoryName.ToLower().Contains(searchStringCategoryName.ToLower())
                 && x.Brand.BrandName.ToLower().Contains(searchStringBrandName.ToLower())).ToList();

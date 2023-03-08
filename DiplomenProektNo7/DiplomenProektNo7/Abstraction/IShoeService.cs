@@ -11,7 +11,7 @@ namespace DiplomenProektNo7.Abstraction
         bool Create(string name, int brandId, int categoryId, string picture, int quantity, decimal price, decimal discount);
         bool Update(int shoeId, string name, int brandId, int categoryId, string picture, int quantity, decimal price, decimal discount);
         List<Shoe> GetShoes();
-        Shoe GetShoeById(int productId);
+        Shoe GetShoeById(int shoeId);
         bool RemoveById(int sportshoeId);
         List<Shoe> GetShoes(string searchStringCategoryName, string searchStringBrandName);
     }
