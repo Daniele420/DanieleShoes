@@ -850,3 +850,4 @@ C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj
 C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Views\Shoe\Edit.cshtml.g.cs
 C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Views\Shoe\Details.cshtml.g.cs
 C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Views\Shoe\Delete.cshtml.g.cs
+C:\Users\danie\Source\Repos\DanieleShoes\DiplomenProektNo7\DiplomenProektNo7\obj\Debug\net5.0\Razor\Views\Shoe\_OrderPartialView.cshtml.g.cs

@@ -52,7 +52,8 @@ namespace DiplomenProektNo7.Controllers
             {
                 var createId = _shoeService.Create(shoe.ShoeName, shoe.BrandId,
                                                    shoe.CategoryId, shoe.Picture,
-                                                   shoe.Quantity, shoe.Price, shoe.Discount);
+                                                   shoe.Quantity, shoe.Price, shoe.Discount,
+                                                   shoe.Description, shoe.Colour, shoe.Material);
                 if (createId)
                 {
                     return RedirectToAction(nameof(Index));
@@ -75,7 +76,10 @@ namespace DiplomenProektNo7.Controllers
                     Picture = shoe.Picture,
                     Quantity = shoe.Quantity,
                     Price = shoe.Price,
-                    Discount = shoe.Discount
+                    Discount = shoe.Discount,
+                    Description = shoe.Description,
+                    Colour = shoe.Colour,
+                    Material = shoe.Material
 
                 }).ToList();
             return this.View(shoes);
@@ -99,6 +103,9 @@ namespace DiplomenProektNo7.Controllers
                 Quantity = shoe.Quantity,
                 Price = shoe.Price,
                 Discount = shoe.Discount,
+                Description = shoe.Description,
+                Colour = shoe.Colour,
+                Material = shoe.Material
             };
             updatedShoe.Brands = _brandService.GetBrands()
                 .Select(b => new BrandPairVM()
@@ -126,7 +133,8 @@ namespace DiplomenProektNo7.Controllers
                 {
                     var updated = _shoeService.Update(id, shoe.ShoeName, shoe.BrandId,
                                                      shoe.CategoryId, shoe.Picture,
-                                                     shoe.Quantity, shoe.Price, shoe.Discount);
+                                                     shoe.Quantity, shoe.Price, shoe.Discount,
+                                                     shoe.Description, shoe.Colour, shoe.Material);
                     if (updated)
                     {
                         return this.RedirectToAction("Index");
@@ -157,6 +165,9 @@ namespace DiplomenProektNo7.Controllers
                 Quantity = item.Quantity,
                 Price = item.Price,
                 Discount = item.Discount,
+                Description = item.Description,
+                Colour = item.Colour,
+                Material = item.Material,
             };
             return View(shoe);
         }
@@ -181,6 +192,9 @@ namespace DiplomenProektNo7.Controllers
                 Quantity = item.Quantity,
                 Price = item.Price,
                 Discount = item.Discount,
+                Description = item.Description,
+                Colour = item.Colour,
+                Material = item.Material,
             };
             return View(shoe);
         }

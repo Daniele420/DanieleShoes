@@ -27,7 +27,17 @@ namespace DiplomenProektNo7.Models.Shoe
 
         [Display(Name = "Price")]
         public decimal Price { get; set; }
+
         [Display(Name = "Discount")]
         public decimal Discount { get; set; }
+
+        [Display(Name = "Description")]
+        public string Description { get; set; }
+
+        [Display(Name = "Colour")]
+        public string Colour { get; set; }
+
+        [Display(Name = "Material")]
+        public string Material { get; set; }
     }
 }

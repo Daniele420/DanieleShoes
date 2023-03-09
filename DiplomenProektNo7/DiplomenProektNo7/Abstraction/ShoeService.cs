@@ -15,7 +15,7 @@ namespace DiplomenProektNo7.Abstraction
         {
             _context = context;
         }
-        public bool Create(string name, int brandId, int categoryId, string picture, int quantity, decimal price, decimal discount)
+        public bool Create(string name, int brandId, int categoryId, string picture, int quantity, decimal price, decimal discount, string description, string colour, string material)
         {
             Shoe item = new Shoe
             {
@@ -26,7 +26,10 @@ namespace DiplomenProektNo7.Abstraction
                 Picture = picture,
                 Quantity = quantity,
                 Price = price,
-                Discount = discount
+                Discount = discount,
+                Description = description,
+                Colour = colour,
+                Material = material
             };
 
             _context.Shoes.Add(item);
@@ -70,7 +73,7 @@ namespace DiplomenProektNo7.Abstraction
             }
             return shoes;
         }
-        public bool Update(int shoeId, string name, int brandId, int categoryId, string picture,int quantity, decimal price, decimal discount)
+        public bool Update(int shoeId, string name, int brandId, int categoryId, string picture,int quantity, decimal price, decimal discount, string description, string colour, string material)
         {
             var shoe = GetShoeById(shoeId);
             if (shoe == default(Shoe))
@@ -86,6 +89,9 @@ namespace DiplomenProektNo7.Abstraction
             shoe.Quantity = quantity;
             shoe.Price = price;
             shoe.Discount = discount;
+            shoe.Description = description;
+            shoe.Colour = colour;
+            shoe.Material = material;
             _context.Update(shoe);
             return _context.SaveChanges() != 0;
         }

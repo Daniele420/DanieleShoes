@@ -26,10 +26,19 @@ namespace DiplomenProektNo7.Domain
         [Required]
         public decimal Price { get; set; }
         public decimal Discount { get; set; }
-        public virtual IEnumerable<Order> Orders { get; set; } = new List<Order>();
+
         [Required]
+        [MaxLength(300)]
         public string Description { get; set; }
+
+        [Required]
+        [MaxLength(20)]
         public string Colour { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string Material { get; set; }
+
+        public virtual IEnumerable<Order> Orders { get; set; } = new List<Order>();
     }
 }
