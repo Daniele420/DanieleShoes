@@ -31,7 +31,7 @@ namespace DiplomenProektNo7.Controllers
                 {
                     Id = x.Id,
                     OrderDate = x.OrderDate.ToString("dd-MMM,yyyy hh:mm", CultureInfo.InvariantCulture),
-                    UserId = userId,
+                    UserId = x.UserId,
                     User = x.User.UserName,
                     ShoeId = x.ShoeId,
                     Shoe = x.Shoe.ShoeName,
@@ -69,7 +69,7 @@ namespace DiplomenProektNo7.Controllers
                     TotalPrice = x.TotalPrice,
                 }).ToList();
 
-            if (!string.IsNullOrEmpty(searchString))
+            if (!String.IsNullOrEmpty(searchString))
             {
                 orders = orders.Where(o => o.Shoe.ToLower().Contains(searchString.ToLower())).ToList();
             }

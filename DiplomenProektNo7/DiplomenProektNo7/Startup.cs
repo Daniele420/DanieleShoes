@@ -44,6 +44,8 @@ namespace DiplomenProektNo7
             services.AddTransient<ICategoryService, CategoryService>();
             services.AddTransient<IBrandService, BrandService>();
 
+            services.AddTransient<IStatisticsService, StatisticsService>();
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseLazyLoadingProxies()
                 .UseSqlServer(

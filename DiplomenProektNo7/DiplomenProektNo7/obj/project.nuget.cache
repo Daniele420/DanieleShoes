@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8u3rNcXA+Aiq8jblf1TPMTYxzsvTj/HQWAxziapHA1rcU085zccCCG9ErB8yXZCfPxoJ8CSFR2hyps1WHXuZdg==",
+  "dgSpecHash": "eT4FPZ+AJ/Kozay7PxQ7uXEYCbdk1gQg7YFV78gT3poMJVjRw+y4VWLgjTunam/aJRRiPs/Pv2k8h2kI7suhpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\danie\\Source\\Repos\\DanieleShoes\\DiplomenProektNo7\\DiplomenProektNo7\\DiplomenProektNo7.csproj",
+  "projectFilePath": "C:\\jamba jumba\\DanieleShoes\\DiplomenProektNo7\\DiplomenProektNo7\\DiplomenProektNo7.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\danie\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\danie\\.nuget\\packages\\documentformat.openxml\\2.19.0\\documentformat.openxml.2.19.0.nupkg.sha512",

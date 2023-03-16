@@ -50,13 +50,7 @@
                 @Html.DisplayNameFor(model => model.Discount)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Colour)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Material)
             </th>
             @if (this.User.Identity.IsAuthenticated)
             {
@@ -67,9 +61,9 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
-@foreach (var item in Model) 
-    {
+   <tbody>
+@foreach (var item in Model)
+{
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.ShoeName)
@@ -100,37 +94,31 @@
                 @Html.DisplayFor(modelItem => item.Discount) %
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Colour)
             </td>
-            <td>
-                 @Html.DisplayFor(modelItem => item.Material)
-            </td>
             @if (this.User.Identity.IsAuthenticated)
-                {
+             {
                     <td>
-                        @await Html.PartialAsync("_OrderPartialView", new OrderConfirmVМ
-                        {
-                            ShoeId = item.Id
-                        })
+                        @await Html.PartialAsync("_OrderPartialView", new OrderConfirmVM
+                    {
+                       ShoeId = item.Id
+                    })
                     </td>
-                }
-                <td>
+             }
+             <td>
                     @if ((this.User.Identity.IsAuthenticated) && (this.User.IsInRole("Administrator")))
                     {
-                        <a asp-action="Edit" asp-asp-all-route-id="@item.Id">Edit</a>
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
                     } |
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     @if ((this.User.Identity.IsAuthenticated) && (this.User.IsInRole("Administrator")))
                     {
                         <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                     }
-            </td>
+             </td>
         </tr>
-}
-    </tbody>
+ }
+   </tbody>
 </table>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

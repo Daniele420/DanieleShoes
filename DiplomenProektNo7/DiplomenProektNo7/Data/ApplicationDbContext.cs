@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Text;
 using DiplomenProektNo7.Models.Shoe;
 using DiplomenProektNo7.Models.Order;
+using DiplomenProektNo7.Models.Client;
+using DiplomenProektNo7.Models.Statistics;
 
 namespace DiplomenProektNo7.Data
 {
@@ -26,5 +28,9 @@ namespace DiplomenProektNo7.Data
         public DbSet<DiplomenProektNo7.Models.Shoe.ShoeDetailsVM> ShoeDetailsVM { get; set; }
         public DbSet<DiplomenProektNo7.Models.Shoe.ShoeDeleteVM> ShoeDeleteVM { get; set; }
         public DbSet<DiplomenProektNo7.Models.Order.OrderConfirmVM> OrderConfirmVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Order.OrderIndexVM> OrderIndexVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Client.ClientIndexVM> ClientIndexVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Client.ClientDeleteVM> ClientDeleteVM { get; set; }
+        public DbSet<DiplomenProektNo7.Models.Statistics.StatisticsVM> StatisticsVM { get; set; }
     }
 }

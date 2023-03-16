@@ -73,7 +73,7 @@ namespace DiplomenProektNo7.Abstraction
             }
             return shoes;
         }
-        public bool Update(int shoeId, string name, int brandId, int categoryId, string picture,int quantity, decimal price, decimal discount, string description, string colour, string material)
+        public bool Update(int shoeId, string name, int brandId, int categoryId, string picture, int quantity, decimal price, decimal discount, string description, string colour, string material)
         {
             var shoe = GetShoeById(shoeId);
             if (shoe == default(Shoe))
